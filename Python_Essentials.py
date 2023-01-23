@@ -112,3 +112,7 @@ print("I like 'Monty Python'")
 #Solution using single quotes
 print('"I\'m"\n''""learning""\n''"""Python"""\n')
 
+#Tackling:
+
+#Lab Challenge:
+
