@@ -322,3 +322,19 @@ print("Seconds in Hours: ", a * seconds) # printing the number of seconds in a g
 
 print('Goodbye')#here we should also print "Goodbye", but a programmer didn't have time to write any code
 print('Seconds in 3 Hours: ', b * seconds) #this is the end of the program that computes the number of seconds in 3 hour
+
+# Input() variable
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+
+# The input() function with an argument
+anything = input("Tell me anything...")
+print("Hmm...", anything, "...Really?")
+ 
+# The result of input() function
+anything = input("Enter a number: ")
+something = anything ** 2.0
+print(anything, "to the power of 2 is", something)
+
+
