@@ -443,4 +443,18 @@ mins = mins % 60 # correct minutes to fall in the (0..59) range
 hour = hour % 24 # correct hours to fall in the (0..23) range
 print(hour, ":", mins, sep='')
 
-# Module 3:
+# Equality operator (==)
+var = 0  # Assigning 0 to var
+print(var == 0)
+
+var = 1  # Assigning 1 to var
+print(var == 0)
+
+# Inequality: the not equal to operator (!=)
+
+
+# Comparison operators: greater than or equal to (>=)
+
+# Comparison operators: less than (<)
+
+# Comparison operators: less than or equal to (<=)
