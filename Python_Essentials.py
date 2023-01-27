@@ -337,4 +337,109 @@ anything = input("Enter a number: ")
 something = anything ** 2.0
 print(anything, "to the power of 2 is", something)
 
+# input() and type casting
+
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+hypo = (leg_a**2 + leg_b**2) ** .5
+print("Hypotenuse length is", hypo)
+
+#removing the "hypo" variable makes the code clean
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is", (leg_a**2 + leg_b**2) ** .5)
+
+
+# String operators
+# The program glues strings together
+
+fnam = input("May I have your first name, please? ")
+lnam = input("May I have your last name, please? ")
+print("Thank you.")
+print("\nYour name is " + fnam + " " + lnam + ".")
+
+
+# This simple program "draws" a rectangle, making use of an old operator (+)
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
+
+# Replication
+# replicates the string the same number of times specified by the number; this case generates a square box
+
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
+
+#  LAB   Simple input and output
+# Scenario
+# Your task is to complete the code in order to evaluate the results of four basic arithmetic operations.
+
+# The results have to be printed to the console.
+
+# You may not be able to protect the code from a user who wants to divide by zero. 
+# That's okay, don't worry about it for now.
+
+# input a float value for variable a here
+# input a float value for variable b here
+
+# output the result of addition here
+# output the result of subtraction here
+# output the result of multiplication here
+# output the result of division here
+
+# print("\nThat's all, folks!")
+
+# Solution:
+
+a = float(input("Give (a) a value: "))
+# input a float value for variable b here
+b = float(input("Give (b) a value: "))
+# output the result of addition here
+print("Addition result:", a + b)
+# output the result of subtraction here
+print("Subtraction result:", a - b)
+# output the result of multiplication here
+print("Multiplication result:", a * b)
+# output the result of division here
+print("Division result:", a / b)
+
+print("\nThat's all, folks!")
+
+#  LAB   Operators and expressions
+# Scenario
+# Your task is to complete the code in order to evaluate the following expression
+
+# Sample input:1    Expected output: y = 0.6000000000000001
+
+# Solution:
+
+x = float(input("Enter value for x: "))
+
+
+# Write your code here.
+y = 1 / (x + 1 /(x + 1 / (x + (1 / x))))
+print("y =", y)
+
+#  LAB   Operators and expressions – 2
+# Scenario
+# Your task is to prepare a simple code able to evaluate the end time of a period of time, given as a number of minutes (it could be arbitrarily large). 
+# The start time is given as a pair of hours (0..23) and minutes (0..59). The result has to be printed to the console.
+
+# For example, if an event starts at 12:17 and lasts 59 minutes, it will end at 13:16.
+
+# Don't worry about any imperfections in your code ‒ it's okay if it accepts an invalid time ‒ the most important thing is that the code produces valid results for valid input data.
+
+ 
+# Sample input: 12 , 17, 59     Expected output:13:16
+
+# Solution:
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+mins = mins + dura # find a total of all minutes
+hour = hour + mins // 60 # find a number of hours hidden in minutes and update the hour
+mins = mins % 60 # correct minutes to fall in the (0..59) range
+hour = hour % 24 # correct hours to fall in the (0..23) range
+print(hour, ":", mins, sep='')
 
