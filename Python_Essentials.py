@@ -337,7 +337,7 @@ anything = input("Enter a number: ")
 something = anything ** 2.0
 print(anything, "to the power of 2 is", something)
 
-# input() and type casting
+# Input() and type casting
 
 leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
@@ -443,3 +443,4 @@ mins = mins % 60 # correct minutes to fall in the (0..59) range
 hour = hour % 24 # correct hours to fall in the (0..23) range
 print(hour, ":", mins, sep='')
 
+# Module 3:
