@@ -429,8 +429,6 @@ print("y =", y)
 # For example, if an event starts at 12:17 and lasts 59 minutes, it will end at 13:16.
 
 # Don't worry about any imperfections in your code ‒ it's okay if it accepts an invalid time ‒ the most important thing is that the code produces valid results for valid input data.
-
- 
 # Sample input: 12 , 17, 59     Expected output:13:16
 
 # Solution:
@@ -446,15 +444,75 @@ print(hour, ":", mins, sep='')
 # Equality operator (==)
 var = 0  # Assigning 0 to var
 print(var == 0)
-
 var = 1  # Assigning 1 to var
 print(var == 0)
 
 # Inequality: the not equal to operator (!=)
+var = 0  # Assigning 0 to var
+print(var != 0)
+var = 1  # Assigning 1 to var
+print(var != 0)
 
+# Comparison operators: greater than (>)
+black_sheep > white_sheep  # Greater than
 
 # Comparison operators: greater than or equal to (>=)
+centigrade_outside >= 0.0  # Greater than or equal to
 
 # Comparison operators: less than (<)
+centigrade_outside < 0.0  # Less than
 
 # Comparison operators: less than or equal to (<=)
+centigrade_outside <= 0.0  # Less than or equal to
+
+#  LAB:   Variables
+# Scenario
+# Using one of the comparison operators in Python, write a simple two-line program that takes the parameter n as input, which is an integer, and prints False if n is less than 100, and True if n is greater than or equal to 100.
+# Don't create any if blocks (we're going to talk about them very soon). Test your code using the data we've provided for you.
+
+# Test Data
+# Sample input: 55  Expected output: False
+n = int(input('Give me a number:'))
+print( n >= 100)
+
+# Conditions and conditional execution
+# the if statement
+
+sheep_counter = 120
+if sheep_counter >= 120: # Evaluate a test expression
+    sleep_and_dream() # Execute if test expression is True
+
+# the if-else statement
+
+if true_or_false_condition:
+    perform_if_condition_true
+else:
+    perform_if_condition_false
+
+# Nested if statement
+
+if the_weather_is_good:
+    if nice_restaurant_is_found:
+        have_lunch()
+    else:
+        eat_a_sandwich()
+else:
+    if tickets_are_available:
+        go_to_the_theater()
+    else:
+        go_shopping()
+
+# Example code: Find the larger number
+
+# Read two numbers
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+# Choose the larger number
+if number1 > number2:
+    larger_number = number1
+else:
+    larger_number = number2
+
+# Print the result
+print("The larger number is:", larger_number)
