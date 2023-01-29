@@ -516,3 +516,66 @@ else:
 
 # Print the result
 print("The larger number is:", larger_number)
+
+
+# Write a program which finds the largest of four, five, six, or even ten numbers
+first_number = int(input('Select a number between 1 to 6 and pick one:'))
+second_number = int(input('Select a number between 1 to 6 and pick a different one:'))
+third_number = int(input('Select a number between 1 to 6 and pick another different one:'))
+
+print('The numbers picked are:' , first_number , second_number , third_number , sep=',')
+if first_number > second_number:
+    print (first_number ,  "is greater than" , second_number)
+else:
+    print(second_number ,"is greater than" , first_number)
+if first_number > third_number:
+    print (first_number ,"is greater than" , third_number)
+else:
+    print(third_number ,"is greater than" , first_number)
+if second_number > third_number:
+    print (second_number ,"is greater than" , third_number)
+else:
+    print(third_number ,"is greater than" , second_number)
+
+# Python inbuilt function MAX()
+# Read three numbers.
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter the third number: "))
+
+# Check which one of the numbers is the greatest
+# and pass it to the largest_number variable.
+
+largest_number = max(number1, number2, number3)
+
+# Print the result.
+print("The largest number is:", largest_number)
+
+# LAB   Comparison operators and conditional execution
+# Scenario
+# Spathiphyllum, more commonly known as a peace lily or white sail plant, is one of the most popular indoor houseplants that filters out harmful toxins from the air. Some of the toxins that it neutralizes include benzene, formaldehyde, and ammonia.
+# Imagine that your computer program loves these plants. Whenever it receives an input in the form of the word Spathiphyllum, it involuntarily shouts to the console the following string: "Spathiphyllum is the best plant ever!"
+
+# Write a program that utilizes the concept of conditional execution, takes a string as input, and:
+
+# prints the sentence "Yes - Spathiphyllum is the best 
+# plant ever!" to the screen if the inputted string is "Spathiphyllum" (upper-case)
+# prints "No, I want a big Spathiphyllum!" if the inputted string is "spathiphyllum" (lower-case)
+# prints "Spathiphyllum! Not [input]!" otherwise. Note: [input] is the string taken as input.
+# Test your code using the data we've provided for you. And get yourself a Spathiphyllum, too!
+
+
+# Test Data: Sample input: spathiphyllum  Expected output: No, I want a big Spathiphyllum!
+
+# SOLUTION
+word = input("What flower name do you have in mind?")
+
+if word == 'spathiphyllum':
+    print("No, I want a big Spathiphyllum!")
+else:
+    if word == 'pelargonium':
+        print("Spathiphyllum! Not" , word , end="!")
+    else:
+        print('Yes - Spathiphyllum is the best plant ever!')
+    
+    
