@@ -371,6 +371,20 @@ print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
 
+# More examples:
+# Example 2:
+x, y, z = 5, 10, 8
+ 
+print(x > z)
+print((y - 5) == x)
+
+# Example 2:
+x, y, z = 5, 10, 8
+x, y, z = z, y, x
+ 
+print(x > z)
+print((y - 5) == x)
+
 #  LAB   Simple input and output
 # Scenario
 # Your task is to complete the code in order to evaluate the results of four basic arithmetic operations.
@@ -446,6 +460,20 @@ var = 0  # Assigning 0 to var
 print(var == 0)
 var = 1  # Assigning 1 to var
 print(var == 0)
+
+# Code Examples:
+# Example 1:
+x = 10
+ 
+if x == 10:
+    print(x == 10)
+if x > 5:
+    print(x > 5)
+if x < 10:
+    print(x < 10)
+else:
+    print("else")
+ 
 
 # Inequality: the not equal to operator (!=)
 var = 0  # Assigning 0 to var
@@ -578,4 +606,89 @@ else:
     else:
         print('Yes - Spathiphyllum is the best plant ever!')
     
-    
+
+# Code Examples:
+# Example 1:
+x = "1"
+ 
+if x == 1:
+    print("one")
+elif x == "1":
+    if int(x) > 1:
+        print("two")
+    elif int(x) < 1:
+        print("three")
+    else:
+        print("four")
+if int(x) == 1:
+    print("five")
+else:
+    print("six")
+
+# Example 2:
+x = 1
+y = 1.0
+z = "1"
+ 
+if x == y:
+    print("one")
+if y == int(z):
+    print("two")
+elif x == y:
+    print("three")
+else:
+    print("four")
+
+# An infinite loop
+# Store the current largest number here.
+largest_number = -999999999
+
+# Input the first value.
+number = int(input("Enter a number or type -1 to stop: "))
+
+# If the number is not equal to -1, continue.
+while number != -1:
+# Is number larger than largest_number?
+    if number > largest_number:
+# Yes, update largest_number.
+        largest_number = number
+# Input the next number.
+        number = int(input("Enter a number or type -1 to stop: "))
+
+# Print the largest number.
+print("The largest number is:", largest_number)
+
+
+
+# The while loop
+
+# A program that reads a sequence of numbers
+# and counts how many numbers are even and how many are odd.
+# The program terminates when zero is entered.
+
+odd_numbers = 0
+even_numbers = 0
+
+# Read the first number.
+number = int(input("Enter a number or type 0 to stop: "))
+
+# 0 terminates execution.
+while number != 0:
+# Check if the number is odd.
+    if number % 2 == 1:
+# Increase the odd_numbers counter.
+        odd_numbers += 1
+    else:
+# Increase the even_numbers counter.
+        even_numbers += 1
+# Read the next number.
+number = int(input("Enter a number or type 0 to stop: "))
+
+# Print results.
+print("Odd numbers count:", odd_numbers)
+print("Even numbers count:", even_numbers)
+
+
+
+
+
