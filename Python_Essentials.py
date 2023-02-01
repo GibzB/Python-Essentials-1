@@ -818,3 +818,9 @@ for i in range(1, 1):
 #   This means that the range()'s second argument must be GREATER than the first
 for i in range(2, 1):
     print("The value of i is currently", i)
+
+# Program whose task is to write some of the first powers of two
+starting_number = 1
+for exponent in range(16):
+    print("2 raised to the power of", exponent, "is", starting_number)
+    starting_number *= 2
