@@ -786,5 +786,14 @@ while guessed_number != secret_number:
     guessed_number = int(input("Enter the number again: "))
 print(secret_number, "Well done, muggle! You are free now.")
 
+# For Loops
 
+for i in range(10): 
+    print("The value of i is currently", i) # Prints consequent numbers starting from zero
 
+for i in range(2, 8): 
+    # The first argument determines the initial (first) value of the control variable.
+    # The last argument shows the first value the control variable will not be assigned.
+    print("The value of i is currently", i)
+
+# 
