@@ -880,3 +880,32 @@ if counter:
     print("The largest number is", largest_number)
 else:
     print("You haven't entered any number.")
+
+
+# LAB
+#  Your task is very simple here: write a program that uses a for loop to "count mississippily" to five. 
+#  Having counted to five, the program should print to the screen the final message "Ready or not, here I come!"
+
+# Solution:
+import time
+
+for second in range(1, 6):
+    print(second, "Mississippi")
+    time.sleep(1)
+	
+print("Ready or not, here I come!")
+
+# LAB   The break statement – Stuck in a loop
+
+#  The break statement is used to exit/terminate a loop.
+#  Design a program that uses a while loop and continuously asks the user to enter a word unless the user enters "chupacabra" 
+#  as the secret exit word, in which case the message "You've successfully left the loop." should be printed to the screen, and the loop should terminate.
+
+# Don't print any of the words entered by the user. Use the concept of conditional execution and the break statement.
+
+# Solution:
+while True:
+    word = input("You're stuck in an infinite loop!\nEnter the secret word to leave the loop: ")
+    if word == "chupacabra":
+        break
+print("You've successfully left the loop!")
