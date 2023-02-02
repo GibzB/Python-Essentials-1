@@ -909,3 +909,31 @@ while True:
     if word == "chupacabra":
         break
 print("You've successfully left the loop!")
+
+
+#  LAB   Essentials of the while loop
+
+# Scenario
+# Listen to this story: a boy and his father, a computer programmer, are playing with wooden blocks. They are building a pyramid.
+# Their pyramid is a bit weird, as it is actually a pyramid-shaped wall – it's flat. 
+# The pyramid is stacked according to one simple principle: each lower layer contains one block more than the layer above.
+
+# Your task is to write a program which reads the number of blocks the builders have, 
+# and outputs the height of the pyramid that can be built using these blocks.
+
+# Test Data: Sample input: 6        Expected output:  The height of the pyramid: 3
+#            Sample input: 20       Expected output:  The height of the pyramid: 3
+#            Sample input: 1000     Expected output:  The height of the pyramid: 44
+#            Sample input: 2        Expected output:  The height of the pyramid: 1
+
+# SOLUTION
+blocks = int(input("Enter the number of blocks: "))
+
+height = 0
+in_layer = 1
+while in_layer <= blocks:
+    height += 1
+    blocks -= in_layer
+    in_layer += 1
+
+print("The height of the pyramid:", height)
