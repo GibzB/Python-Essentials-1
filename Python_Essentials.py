@@ -967,3 +967,43 @@ if c0 > 1:
 else:
 	print("Bad c0 value")
 	
+# Bit Mask
+mask = 8
+flag_register = 0000000000000000000000000000x000
+
+if flag_register & mask:
+    # My bit is set.
+    else:
+    
+    print("The Bit Mask Function applied: ")
+    # My bit is reset.
+
+
+# Shifting (Right and Left)
+var = 17
+var_right = var >> 1
+var_left = var << 2
+print(var, var_left, var_right)
+
+# more quizez
+# Prints output as False
+x = 1
+y = 0
+
+z = ((x == y) and (x == y)) or not(x == y)
+print(not(z))
+
+# more quizez
+# Prints out 0 5 -5 1 1 16
+x = 4
+y = 1
+
+a = x & y
+b = x | y
+c = ~x # tricky!
+d = x ^ 5
+e = x >> 2
+f = x << 2
+
+print(a, b, c, d, e, f)
+
