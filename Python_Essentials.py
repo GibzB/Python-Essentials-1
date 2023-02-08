@@ -973,8 +973,8 @@ flag_register = 0000000000000000000000000000x000
 
 if flag_register & mask:
     # My bit is set.
-    else:
-    
+    print("My bit is set")
+else:
     print("The Bit Mask Function applied: ")
     # My bit is reset.
 
