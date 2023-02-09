@@ -1051,3 +1051,9 @@ print("New list's length:", len(numbers))  # Printing new list length.
 print("\nNew list content:", numbers)  # Printing current list content.
 
 ###
+
+# Negative Indices
+# It prints the last item on the list
+
+numbers = [111, 7, 2, 1]
+print(numbers[-1])
