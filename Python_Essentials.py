@@ -1057,3 +1057,90 @@ print("\nNew list content:", numbers)  # Printing current list content.
 
 numbers = [111, 7, 2, 1]
 print(numbers[-1])
+
+
+# LAB   The basics of lists
+#  Scenario
+#  There once was a hat. The hat contained no rabbit, but a list of five numbers: 1, 2, 3, 4, and 5.
+
+#  Your task is to:
+
+#  write a line of code that prompts the user to replace the middle number in the list with an integer number entered by the user (Step 1)
+#  write a line of code that removes the last element from the list (Step 2)
+#  write a line of code that prints the length of the existing list (Step 3).
+
+
+# SOLUTION:
+hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+
+# Step 1: write a line of code that prompts the user
+# to replace the middle number with an integer number entered by the user.
+hat_list[2] = int(input('Enter a number of your choice:'))
+# Step 2: write a line of code that removes the last element from the list.
+del hat_list[4]
+# Step 3: write a line of code that prints the length of the existing list.
+print(len(hat_list))
+print(hat_list)
+
+
+# METHODS
+# A typical method invocation usually looks like this:
+
+#  result = data.method(arg)
+
+
+# Adding elements to a list: append() and insert()
+numbers = [111, 7, 2, 1]
+print(len(numbers))
+print(numbers)
+
+###
+
+numbers.append(4)
+
+print(len(numbers))
+print(numbers)
+
+###
+
+numbers.insert(0, 222)
+print(len(numbers))
+print(numbers)
+
+
+# Example of creating an empty list with for loop
+my_list = []  # Creating an empty list.
+
+for i in range(5):
+    my_list.append(i + 1)
+
+print(my_list)
+
+#  Prints the reverse
+my_list = [] # Creating an empty list.
+
+for i in range(5):
+    my_list.insert(0, i + 1)
+
+print(my_list)
+
+
+# Making use of lists
+# Effeciency of for loops
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in range(len(my_list)):
+    total += my_list[i]
+
+print(total)
+
+# The above code changes to this:
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in my_list:
+    total += i
+
+print(total)
+
