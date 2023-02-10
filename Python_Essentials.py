@@ -1144,3 +1144,15 @@ for i in my_list:
 
 print(total)
 
+# Swapping items in a list
+my_list = [10, 1, 8, 3, 5]
+
+my_list[0], my_list[4] = my_list[4], my_list[0]
+my_list[1], my_list[3] = my_list[3], my_list[1]
+
+print(my_list)
+
+# using for loop to swap items on a list
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i] #declare length variable as: length = len(list_name)
+print(my_list)
