@@ -1232,3 +1232,26 @@ while swapped:
 
 print("\nSorted:")
 print(my_list)
+
+
+# Using sorting after assigning 
+a = 3
+b = 1
+c = 2
+ 
+lst = [a, c, b]
+lst.sort()
+ 
+print(lst)
+
+# Using reverse sorting after assigning 
+a = "A"
+b = "B"
+c = "C"
+d = " "
+
+lst = [a, b, c, d]
+lst.reverse()
+
+print(lst)
+
