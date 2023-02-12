@@ -1262,10 +1262,25 @@ list_1[0] = 2
 print(list_2)
 
 # SLICE: Allows you to make a brand new copy of a list, or parts of a list. 
+
+# General forms of the slice look as follows:
+
+my_list[start:end] # The colon is the differenciating factor
+
+# Sample codebase
 list_1 = [1]
 list_2 = list_1[:]
 list_1[0] = 2
 print(list_2)
 
+# Copying the entire list.
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
 
+# Copying some part of the list.
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]
+print(new_list)
 
