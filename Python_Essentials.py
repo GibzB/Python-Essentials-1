@@ -1255,3 +1255,17 @@ lst.reverse()
 
 print(lst)
 
+# inner life of lists
+list_1 = [1]
+list_2 = list_1
+list_1[0] = 2
+print(list_2)
+
+# SLICE: Allows you to make a brand new copy of a list, or parts of a list. 
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+
+
+
