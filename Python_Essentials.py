@@ -1289,3 +1289,23 @@ print(new_list)
 my_list = [10, 8, 6, 4, 2]
 new_list = my_list[1:-1]
 print(new_list)
+
+# If the start specifies an element lying further than the one described by the end (from the list's beginning), the slice will be empty:
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[-1:1]
+print(new_list)
+
+# If you omit the start in your slice, it is assumed that you want to get a slice beginning at the element with index 0.
+
+# In other words, the slice of this form: my_list[:end]is a more compact equivalent of: my_list[0:end]
+
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[:3]
+print(new_list)
+
+# Deleting all the elements at once is possible too:
+
+my_list = [10, 8, 6, 4, 2]
+del my_list[:]
+print(my_list)
