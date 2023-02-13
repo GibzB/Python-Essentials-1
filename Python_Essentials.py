@@ -1323,3 +1323,27 @@ print(my_list1)
 
 elem in my_list
 elem not in my_list
+
+# Sample code:
+my_list = [0, 3, 12, 8, 2]
+
+print(5 in my_list)
+print(5 not in my_list)
+print(12 in my_list)
+
+# SAMPLE IDEAL REAL WORLD APPLICATION 
+
+# Let's assume that you've chosen the following numbers in the lottery: 3, 7, 11, 42, 34, 49
+# The numbers that have been drawn are: 5, 11, 9, 42, 3, 49.
+# The question is: how many numbers have you hit?
+
+# Program:
+drawn = [5, 11, 9, 42, 3, 49]
+bets = [3, 7, 11, 42, 34, 49]
+hits = 0
+ 
+for number in bets:
+    if number in drawn:
+        hits += 1
+ 
+print(hits)
