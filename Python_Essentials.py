@@ -1309,3 +1309,17 @@ print(new_list)
 my_list = [10, 8, 6, 4, 2]
 del my_list[:]
 print(my_list)
+
+# 
+# Removing list slice
+# The print() function invocation from the last line of the code will then cause a runtime error.
+my_list1 = [10, 8, 6, 4, 2]
+del my_list1
+print(my_list1)
+
+# The in and not in operators
+# Python offers two very powerful operators, 
+# able to look through the list in order to check whether a specific value is stored inside the list or not.
+
+elem in my_list
+elem not in my_list
