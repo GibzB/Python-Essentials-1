@@ -1,3 +1,4 @@
-sample_list = ["A", "B", "C", "D", "E"]
-new_list = sample_list[1:-2]
-print(new_list)
+my_list = ["A", "B", 1, 2]
+print("A" in my_list)  
+print("C" not in my_list)  
+print(2 not in my_list)  
