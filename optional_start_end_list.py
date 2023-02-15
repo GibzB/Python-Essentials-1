@@ -1,4 +1,4 @@
-my_list = [1, 2, 3, 4, 5]
+my_list = [10, 20, 30, 40, 50]
 slice_one = my_list[2: ]
 slice_two = my_list[ :2]
 slice_three = my_list[-2: ]
