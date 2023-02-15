@@ -1,9 +1,6 @@
 WHITE_PAWN = "-0-"
-KNIGHT = "-8-"
+squares = [x ** 2 for x in range(10)]
+row7 = [WHITE_PAWN for i in range(10)]
 
-row = [WHITE_PAWN for i in range(8)]
-row7 = [KNIGHT for i in range(8)]
-
-
-print(row)
+print(squares)
 print(row7)
