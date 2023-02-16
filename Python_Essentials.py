@@ -1372,3 +1372,7 @@ for number in my_list:  # Browse all numbers from the source list.
 my_list = new_list[:]  # Make a copy of new_list.
 print("The list with unique elements only:")
 print(my_list)
+
+
+# list of lists representing the whole chessboard
+# Two dimensional data array are refferef to as a MATRIX
