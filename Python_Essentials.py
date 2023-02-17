@@ -1375,4 +1375,8 @@ print(my_list)
 
 
 # list of lists representing the whole chessboard
-# Two dimensional data array are refferef to as a MATRIX
+# Two dimensional data array are reffered to as a MATRIX
+
+
+# Three dimensional data array
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
