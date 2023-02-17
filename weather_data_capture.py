@@ -7,6 +7,7 @@
 
 temps = [[0.0 for h in range(24)] for d in range(31)]
 
+# Average Temperature at Noon
 total = 0.0
  
 for day in temps:
@@ -18,11 +19,6 @@ print("Average temperature at noon:", average)
 
 
 # highest temperature during the whole month
-temps = [[0.0 for h in range(24)] for d in range(31)]
-#
-# The matrix is magically updated here.
-#
-
 highest = -100.0
 
 for day in temps:
@@ -31,4 +27,13 @@ for day in temps:
             highest = temp
 
 print("The highest temperature was:", highest)
+
+# count the days when the temperature at noon was at least 20 Degrees Celcius
+hot_days = 0
+
+for day in temps:
+    if day[11] > 20.0:
+        hot_days += 1
+
+print(hot_days, "days were hot.")
 
