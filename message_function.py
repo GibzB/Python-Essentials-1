@@ -3,3 +3,4 @@ def message():
  
 print("We start here.")
 print("We end here.")
+message() #function is called.

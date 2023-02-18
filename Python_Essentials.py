@@ -1416,3 +1416,19 @@ def message():
 message()
  
 print("We end here.")
+
+
+# Function at work
+# Modifying the prompting message is now easy and clear - you can do it by changing the code in just one place ‒ inside the function's body.
+
+def message():
+    print("Enter a value: ")
+ 
+message()
+a = int(input())
+message()
+b = int(input())
+message()
+c = int(input())
+ 
+
