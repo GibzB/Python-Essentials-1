@@ -1387,3 +1387,32 @@ rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
 
 def message():
     print("Enter a value: ")
+
+# 1. You mustn't invoke a function which is not known at the moment of invocation.
+print("We start here.")
+message()
+print("We end here.")
+ 
+ 
+def message():
+    print("Enter a value: ")
+
+
+# 2. You mustn't have a function and a variable of the same name.
+# The following snippet is erroneous:
+
+def message():
+    print("Enter a value: ")
+ 
+message = 1
+
+# You're free to mix your code with functions ‒ you're not obliged to put all your functions at the top of your source file.
+
+print("We start here.")
+ 
+def message():
+    print("Enter a value: ")
+ 
+message()
+ 
+print("We end here.")
