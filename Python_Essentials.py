@@ -1380,3 +1380,10 @@ print(my_list)
 
 # Three dimensional data array
 rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+
+
+# FUNCTIONS
+# defining our prompting function ‒ here it is:
+
+def message():
+    print("Enter a value: ")
