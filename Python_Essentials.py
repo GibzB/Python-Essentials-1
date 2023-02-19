@@ -1438,3 +1438,16 @@ def choice(number):
 
 choice(4)
 
+# It's legal, and possible, to have a variable named the same as a function's parameter.
+# A situation like this activates a mechanism called shadowing:
+# The snippet illustrates the phenomenon:
+
+def message(number):
+    print("Enter a number:", number)
+ 
+number = 1234
+message(1)
+print(number)
+
+
+
