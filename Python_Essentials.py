@@ -1431,4 +1431,10 @@ b = int(input())
 message()
 c = int(input())
  
+# Parameterized functions
+#  
+def choice(number):
+    print("Enter a number of your choice:", number)
+
+choice(4)
 

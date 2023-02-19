@@ -1,4 +1,4 @@
-vals = [0, 1, 2]
-vals[0], vals[2] = vals[2], vals[0]
+def choice(number):
+    print("Enter a number of your choice:", number)
 
-print(vals)
+choice(4)
