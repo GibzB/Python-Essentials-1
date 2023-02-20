@@ -1,6 +1,6 @@
-def message(which, country):
-    print("Enter", which, "universal dailing code", country)
+def message(number, location):
+    print("Enter", number, "as the code of", location)
 
-message("Kenya", 254)
-message("county code", 20)
-message("universal dailing code", "number")
+message(254, "Kenya")
+message(47, "Nairobi County")
+message(1, "Mombasa County")

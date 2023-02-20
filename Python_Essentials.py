@@ -1461,3 +1461,12 @@ message("price", 5)
 message("number", "number")
 
 
+# Positional parameter passing
+# A technique which assigns the ith (first, second, and so on) argument to the ith (first, second, and so on) function parameter
+
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+ 
+introduction("Luke", "Skywalker")
+introduction("Jesse", "Quick")
+introduction("Clark", "Kent")
