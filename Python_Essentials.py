@@ -1449,5 +1449,15 @@ number = 1234
 message(1)
 print(number)
 
+# A function can have as many parameters as you want, 
+#  but the more parameters you have, the harder it is to memorize their roles and purposes.
+
+# Modifying the function ‒ it has two parameters now:
+def message(what, number):
+    print("Enter", what, "number", number)
+
+message("telephone", 11)
+message("price", 5)
+message("number", "number")
 
 
