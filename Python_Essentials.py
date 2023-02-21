@@ -1493,6 +1493,14 @@ def adding(a, b, c):
     print(a, "+", b, "+", c, "=", a + b + c)
 adding(c = 1, b = 2, a = 3)
 
+# function invocation + explaination
+# the argument (3) for the a parameter is passed using the positional way;
+# the arguments for c and b are specified as keyword ones.
+
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
+adding(3, c = 1, b = 2)
+# Output: 3 + 2 + 1 = 6
 
 
 
