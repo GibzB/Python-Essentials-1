@@ -1488,5 +1488,11 @@ def adding(a, b, c):
 
 adding(1, 2, 3)
 
+#  replace such an invocation with a purely keyword variant
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
+adding(c = 1, b = 2, a = 3)
+
+
 
 
