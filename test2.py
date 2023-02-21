@@ -1,4 +1,13 @@
-def choice(number):
-    print("Enter a number of your choice:", number)
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+ 
+introduction("Skywalker", "Luke")
+introduction("Quick", "Jesse")
+introduction("Kent", "Clark")
 
-choice(4)
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+ 
+introduction("Luke", "Skywalker")
+introduction("Jesse", "Quick")
+introduction("Clark", "Kent")
