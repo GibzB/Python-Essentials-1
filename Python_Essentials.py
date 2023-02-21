@@ -1486,5 +1486,7 @@ introduction(last_name = "Skywalker", first_name = "Luke")
 def adding(a, b, c):
     print(a, "+", b, "+", c, "=", a + b + c)
 
+adding(1, 2, 3)
+
 
 
