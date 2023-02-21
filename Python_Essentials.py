@@ -1480,3 +1480,11 @@ def introduction(first_name, last_name):
 introduction(first_name = "James", last_name = "Bond")
 introduction(last_name = "Skywalker", first_name = "Luke")
 
+# Mixing positional and keyword arguments
+# You can mix both styles if you want ‒ there is only one unbreakable rule: you have to put positional arguments before keyword arguments.
+
+def adding(a, b, c):
+    print(a, "+", b, "+", c, "=", a + b + c)
+
+
+
