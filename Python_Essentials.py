@@ -1502,5 +1502,23 @@ def adding(a, b, c):
 adding(3, c = 1, b = 2)
 # Output: 3 + 2 + 1 = 6
 
+# Parametrized functions – more details
+def introduction(first_name, last_name="Smith"):
+     print("Hello, my name is", first_name, last_name)
+introduction("James" , "Doe")
 
 
+def introduce(first_name, last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+introduce("Henry")
+
+# Output: Hello, my name is Henry Smith
+ 
+
+#                 or this
+
+def introduce(first_name, last_name="Smith"):
+    print("Hello, my name is", first_name, last_name)
+introduce(first_name="William")
+
+# Output: Hello, my name is William Smith
