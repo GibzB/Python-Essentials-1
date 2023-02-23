@@ -1522,3 +1522,15 @@ def introduce(first_name, last_name="Smith"):
 introduce(first_name="William")
 
 # Output: Hello, my name is William Smith
+
+# Functions: Effects & Returns
+# Use return to make a function return a value
+
+def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+ 
+    print("Happy New Year!")
