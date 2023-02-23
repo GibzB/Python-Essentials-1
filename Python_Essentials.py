@@ -1534,3 +1534,12 @@ def happy_new_year(wishes = True):
         return
  
     print("Happy New Year!")
+
+# return with an expression
+def boring_function():
+    return 123
+
+x = boring_function()
+
+print("The boring_function has returned its result. It's:", x)
+
