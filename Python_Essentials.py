@@ -1543,3 +1543,11 @@ x = boring_function()
 
 print("The boring_function has returned its result. It's:", x)
 
+# NONE
+# Its data doesn't represent any reasonable value ‒ actually, 
+# it's not a value at all; hence, it mustn't take part in any expressions.
+
+print(None + 2)
+
+
+
