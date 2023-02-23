@@ -1,5 +1,5 @@
-def adding(a, b, c):
-    print(a, "+", b, "+", c, "=", a + b + c)
-adding(3, a = 1, b = 2)
-
+def add_numbers(a, b=2, c):
+    print(a + b + c)
+ 
+add_numbers(a=1, b=2 , c=3)
 
