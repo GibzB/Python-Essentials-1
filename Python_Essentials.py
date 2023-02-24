@@ -1830,8 +1830,7 @@ print(miles_gallon_to_liters_100km(23.5))
 #   e.g the scope of a function's parameter is the function itself.
 def my_function():
     print("Do I know that variable?", var)
-
-
 var = 1
 my_function()
 print(var)
+
