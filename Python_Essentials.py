@@ -1828,6 +1828,7 @@ print(miles_gallon_to_liters_100km(23.5))
 # Functions and SCOPES
 #  The scope of a name (e.g., a variable name) is the part of a code where the name is properly recognizable.
 #   e.g the scope of a function's parameter is the function itself.
+
 def my_function():
     print("Do I know that variable?", var)
 var = 1
@@ -1843,3 +1844,28 @@ def my_function(n):
 var = 1
 my_function(var)
 print(var)
+
+# Global Keyword
+#  The global keyword allows you to modify a variable outside of the current scope.
+#  e.g. to create a global variable inside a function, you can do this:
+def my_function():
+    global var
+    var = 2
+    print("Do I know that variable?", var)
+var = 1
+my_function()
+print(var)
+
+
+# how it works with lists
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    my_list_1 = [0, 1]
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+ 
+ 
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
