@@ -1845,11 +1845,27 @@ var = 1
 my_function(var)
 print(var)
 
+# Functions with Lists
+def my_function(my_list_1):
+    print("Print #1:", my_list_1)
+    print("Print #2:", my_list_2)
+    del my_list_1[0] # Pay attention to this line.
+    print("Print #3:", my_list_1)
+    print("Print #4:", my_list_2)
+ 
+ 
+my_list_2 = [2, 3]
+my_function(my_list_2)
+print("Print #5:", my_list_2)
+
 # Global Keyword
 #  The global keyword allows you to modify a variable outside of the current scope.
+#  Using this keyword inside a function with the name (or names separated with commas) of a variable (or variables), 
+#  forces Python to refrain from creating a new variable inside the function ‒ the one accessible from outside will be used instead.
+
 #  e.g. to create a global variable inside a function, you can do this:
 def my_function():
-    global var
+    global var #We've added global to the function.
     var = 2
     print("Do I know that variable?", var)
 var = 1
