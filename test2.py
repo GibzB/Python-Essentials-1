@@ -1,11 +1,7 @@
-def happy_new_year(wishes = True):
-    print("Three...")
-    print("Two...")
-    print("One...")
-    if not wishes:
-        return
-    print("Happy New Year!")
+def is_a_triangle(a, b, c):
+    if a + b <= c or b + c <= a or c + a <= b:
+        return False
+    return True
  
-# When invoked without any arguments:
-
-happy_new_year(False)
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))

@@ -1893,3 +1893,63 @@ my_function(my_list_2)
 print("Print #5:", my_list_2)
 
 
+# Evaluating BMI and converting imperial units to metric units
+# assumes that the values of both parameters are always meaningful. It's definitely worth checking if they're trustworthy.
+# Ideal thing to do is to check them both and return NONE if any of them looks suspicious.
+def bmi(weight, height):
+    # the \ (backslash) tells python to continue the line of code in the next line
+    if height < 1.0 or height > 2.5 or \
+    weight < 20 or weight > 200:
+        return None
+
+    return weight / height ** 2
+
+print(bmi(352.5, 1.65)) #Outputs: None
+
+
+# The code is able to answer the question: 
+# What is the BMI of a person 5'7" tall and weighing 176 lbs?
+
+# This is the code we have built:
+
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+ 
+ 
+def lb_to_kg(lb):
+    return lb * 0.4535923
+ 
+ 
+def bmi(weight, height):
+    if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
+        return None
+ 
+    return weight / height ** 2
+ 
+ 
+print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))
+
+# Sample functions: Triangles
+# Write a function that takes the lengths of the three sides of a triangle as its parameters,
+def is_a_triangle(a, b, c):
+    if a + b <= c:
+        return False
+    if b + c <= a:
+        return False
+    if c + a <= b:
+        return False
+    return True
+
+
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
+
+# Compact version:
+
+def is_a_triangle(a, b, c):
+    if a + b <= c or b + c <= a or c + a <= b:
+        return False
+    return True
+ 
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
