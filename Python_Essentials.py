@@ -2066,3 +2066,23 @@ def factorial(n):
  
  
 print(factorial(4)) # 4 * 3 * 2 * 1 = 24
+
+# Sequence types and mutability
+# A sequence is a collection of objects that are stored in a particular order.
+# A SEQUENCE is a type of data in Python which is able to store more than one value (or less than one, as a sequence may be empty), 
+# and these values can be sequentially (hence the name) browsed, element by element.
+
+# The list is a classic example of a Python sequence
+
+# MUTABILITY − is a property of any Python data that describes its readiness to be freely changed during program execution.
+# A mutable object can be changed after it's created.
+# An immutable object can't be changed after it's created.
+
+list.append(1)
+
+
+# A sequence can be mutable or immutable.
+# A mutable sequence is a sequence that can be changed after it's created.
+# An immutable sequence is a sequence that can't be changed after it's created.
+
+
