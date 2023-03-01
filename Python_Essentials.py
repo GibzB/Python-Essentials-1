@@ -2085,4 +2085,11 @@ list.append(1)
 # A mutable sequence is a sequence that can be changed after it's created.
 # An immutable sequence is a sequence that can't be changed after it's created.
 
+# TUPLE
+# A tuple is an immutable sequence type
+# A tuple is a sequence of values separated by commas.
+# Tuples prefer to use parenthesis ()
+# Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking or indexing
 
+tuple_1 = (1, 2, 4, 8)
+tuple_2 = 1., .5, .25, .125
