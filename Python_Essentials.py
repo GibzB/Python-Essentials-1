@@ -1980,3 +1980,24 @@ def is_a_right_triangle(a, b, c):
         return a ** 2 == b ** 2 + c ** 2
 print(is_a_right_triangle(5, 3, 4))
 print(is_a_right_triangle(1, 3, 4))
+
+# Factorials
+# Factorial of a number is the product of all the integers from 1 to that number.
+# It's marked with an exclamation mark, and is equal to the product of all natural numbers from one up to its argument.
+# 5! = 5 * 4 * 3 * 2 * 1 = 120
+# 0! = 1
+
+def factorial_function(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+ 
+    product = 1
+    for i in range(2, n + 1):
+        product *= i
+    return product
+ 
+ 
+for n in range(1, 6): # testing
+    print(n, factorial_function(n))
