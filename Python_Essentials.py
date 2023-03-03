@@ -2136,3 +2136,17 @@ t3 = (3, var)
 t1, t2, t3 = t2, t3, t1
  
 print(t1, t2, t3)
+
+# Dictionaries
+# The dictionary is another Python data structure.
+# A dictionary is a collection of key-value pairs.
+# Each key is connected to a value, and you can use a key to access the value associated with that key.
+
+# A dictionary is a mutable data type.
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+phone_numbers = {'boss': 5551234567, 'Suzy': 22657854310}
+empty_dictionary = {}
+ 
+print(dictionary)
+print(phone_numbers)
+print(empty_dictionary)
