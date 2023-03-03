@@ -2093,3 +2093,15 @@ list.append(1)
 
 tuple_1 = (1, 2, 4, 8)
 tuple_2 = 1., .5, .25, .125
+
+# Using Tuples
+# Tuples are used to store multiple items in a single variable.
+my_tuple = (1, 10, 100, 1000)
+
+print(my_tuple[0])
+print(my_tuple[-1])
+print(my_tuple[1:])
+print(my_tuple[:-2])
+
+for elem in my_tuple:
+    print(elem)
