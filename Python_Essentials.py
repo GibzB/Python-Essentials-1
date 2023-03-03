@@ -2105,3 +2105,34 @@ print(my_tuple[:-2])
 
 for elem in my_tuple:
     print(elem)
+
+# What else can tuples do for you?
+
+# 1. the len() function accepts tuples, and returns the number of elements contained inside;
+# 2. the + operator can join tuples together (we've shown you this already)
+# 3. the * operator can multiply tuples, just like lists;
+# 4. the in and not in operators work in the same way as in lists.
+# The snippet in the editor presents them all.
+
+my_tuple = (1, 10, 100)
+
+t1 = my_tuple + (1000, 10000)
+t2 = my_tuple * 3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
+
+# One of the most useful tuple properties 
+# is their ability to appear on the left side of the assignment operator. 
+var = 123
+ 
+t1 = (1, )
+t2 = (2, )
+t3 = (3, var)
+ 
+t1, t2, t3 = t2, t3, t1
+ 
+print(t1, t2, t3)
