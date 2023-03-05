@@ -2189,8 +2189,21 @@ phone_numbers = {'boss': 5551234567,
 
 # Dictionary METHODS & FUNCTIONS
 # 1. The keys() method returns a list of all the keys in the dictionary.
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+ 
+for key in dictionary.keys():
+    print(key, "->", dictionary[key]
+
 # 2. The values() method returns a list of all the values in the dictionary.
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
 # 3. The items() method returns a list of tuples of key-value pairs in the dictionary.
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+ 
+for english, french in dictionary.items():
+    print(english, "->", french)
+
+
 # 4. The get() method returns the value for the given key, if present in the dictionary. If not, it returns None (if get() is called with only one argument).
 # 5. The pop() method removes the element with the specified key and returns its value.
 # 6. The popitem() method removes the last inserted key-value pair from the dictionary.
@@ -2206,8 +2219,5 @@ phone_numbers = {'boss': 5551234567,
 # 16. The viewitems() method returns a view object that displays a list of dictionary's (key, value) tuple pair.
 # 17. The viewkeys() method returns a view object that displays a list of all the keys in the dictionary.
 
-dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
- 
-for key in dictionary.keys():
-    print(key, "->", dictionary[key]
+# TUPLES & DICTIONARIES
 
