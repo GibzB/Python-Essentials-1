@@ -2159,3 +2159,55 @@ empty_dictionary = {}
 # Print the values here.
 print(dictionary['cat'])
 print(phone_numbers['Suzy'])
+
+
+# Note:
+#  1. if the key is a string, you have to specify it as a string;
+#  2.keys are case-sensitive: 'Suzy' is something different from 'suzy'.
+#  3.You mustn't use a non-existent key. 
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+phone_numbers = {'boss' : 5551234567, 'Suzy' : 22657854310}
+empty_dictionary = {}
+
+# Print the values here.
+print(dictionary['cat'])
+print(phone_numbers['Suzy'])
+print(phone_numbers['president']) # will cause an error
+
+# Keep it vertically aligned
+# Example 1:
+dictionary = {
+              "cat": "chat",
+              "dog": "chien",
+              "horse": "cheval"
+}
+# Example 2:
+phone_numbers = {'boss': 5551234567,
+              'Suzy': 22657854310
+}
+
+
+# Dictionary METHODS & FUNCTIONS
+# 1. The keys() method returns a list of all the keys in the dictionary.
+# 2. The values() method returns a list of all the values in the dictionary.
+# 3. The items() method returns a list of tuples of key-value pairs in the dictionary.
+# 4. The get() method returns the value for the given key, if present in the dictionary. If not, it returns None (if get() is called with only one argument).
+# 5. The pop() method removes the element with the specified key and returns its value.
+# 6. The popitem() method removes the last inserted key-value pair from the dictionary.
+# 7. The clear() method removes all the elements from the dictionary.
+# 8. The update() method updates the dictionary with the elements from the another dictionary object or from an iterable of key-value pairs.
+# 9. The setdefault() method returns the value of the item with the specified key. If the key does not exist, insert the key, with the specified value.
+# 10. The copy() method returns a shallow copy of the dictionary.
+# 11. The fromkeys() method returns a dictionary with the specified keys and value.
+# 12. The has_key() method returns true if a dictionary has the specified key, otherwise it returns false.
+# 13. The iteritems() method returns an iterator for the dictionary.
+# 14. The iterkeys() method returns an iterator for the keys of the dictionary.
+# 15. The itervalues() method returns an iterator for the values of the dictionary.
+# 16. The viewitems() method returns a view object that displays a list of dictionary's (key, value) tuple pair.
+# 17. The viewkeys() method returns a view object that displays a list of all the keys in the dictionary.
+
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+ 
+for key in dictionary.keys():
+    print(key, "->", dictionary[key]
+
