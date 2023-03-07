@@ -2241,3 +2241,78 @@ for name in sorted(school_class.keys()):
         counter += 1
     print(name, ":", adding / counter)
 
+# QUESTION: Complete the code to correctly use the count() method 
+# to find the number of duplicates of 2 in the following tuple.
+
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = # Write your code here.
+ 
+print(duplicates) # outputs: 4
+
+# Solution: 
+
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = tup.count(2)
+ 
+print(duplicates)
+
+# QUESTION: Write a program that will "glue" the two dictionaries (d1 and d2) together and create a new one (d3).
+
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+ 
+for item in (d1, d2):
+    # Write your code here.
+ 
+print(d3)
+
+# Solution: 
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+ 
+for item in (d1, d2):
+    d3.update(item)
+ # Write your code here.
+ 
+print(d3)
+
+# QUESTION: Write a program that will convert the my_list list to a tuple.
+
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+ 
+for item in (d1, d2):
+    # Write your code here.
+ 
+print(d3)
+
+# Solution:
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+ 
+for item in (d1, d2):
+    
+    my_list = ["car", "Ford", "flower", "Tulip"]
+
+t = tuple(my_list)
+print(t)
+print(d3)
+
+# QUESTION: Write a program that will convert the colors tuple to a dictionary.
+
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+ 
+# Write your code here.
+ 
+print(colors_dictionary)
+
+# Solution:
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+colors_dictionary = dict(colors)
+print(colors_dictionary)
+
+# EXCEPTIONS
