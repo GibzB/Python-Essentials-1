@@ -2347,3 +2347,7 @@ except ValueError:
     print('I do not know what to do.')    
 except ZeroDivisionError:
     print('Division by zero is not allowed in our Universe.') 
+# second except branch is introduced and both branches have exception names specified
+# if one of the branches is executed, all the other branches remain idle.
+
+# The default exception
