@@ -2316,3 +2316,7 @@ colors_dictionary = dict(colors)
 print(colors_dictionary)
 
 # EXCEPTIONS
+# Man is to err - It's impossible to make no mistakes, and it's impossible to write error-free code. 
+
+value = int(input('Enter a natural number: '))
+print('The reciprocal of', value, 'is', 1/value)
