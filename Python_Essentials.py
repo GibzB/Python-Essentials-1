@@ -2338,6 +2338,7 @@ try:
 except:
     print('I do not know what to do.')
 
+
 # Two exceptions after one try
 try:
     value = int(input('Enter a natural number: '))
