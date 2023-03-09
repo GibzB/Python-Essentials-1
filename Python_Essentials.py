@@ -2379,3 +2379,57 @@ except:
 #  This appears when you try to force Python to perform any operation which provokes division in which the divider is zero
 short_list = [1]
 one_value = short_list[0.5]
+
+# 5. AttributeError
+#  This appears when you try to force Python to perform any operation which provokes division in which the divider is zero
+short_list = [1]
+short_list.append(2)
+short_list.depend(3)
+
+# 6. SyntaxError
+# This exception is raised when the control reaches a line of code which violates Python's grammar.
+
+# 7. KeyboardInterrupt
+# This exception is raised when the user presses Ctrl+C while the program is running.
+
+# When Python closes its eyes
+temperature = float(input('Enter current temperature:'))
+
+if temperature > 0:
+    print("Above zero")
+elif temperature < 0:
+    prin("Below zero") # note the missing letter "t"
+    # Python overlooks the missing "t"
+else:
+    print("Zero")
+
+
+# Tests, testing, and testers
+# 1. Testers are the developer’s best friends don't treat the bugs they discover as an offense or a malignancy; and, 
+# 2. Each bug the testers find is a bug that won't affect the users.
+
+# Bug vs. debug
+# 1. A bug is a mistake in the code.
+# 2. Debugging is the process of finding and fixing bugs.
+#   Using the debugger, you can execute your code line-by-line, inspect all the variables' states and change their values
+#   on demand without modifying the source code, stop program execution when certain conditions are or aren't met, 
+#   and do lots of other useful tasks.
+
+# Print debbugging
+# This form of debugging, is sometimes called interactive debugging.
+# 1. The simplest way to debug your code is to use the print() function.
+
+
+# Some Useful Tips
+#   1. Try to tell someone (for example, your friend or coworker) what your code is expected to do and how it actually behaves
+#   2. Isolate the problem
+#   3. Take a break 
+#   4. Be Optimistic
+
+
+# Unit testing
+#   Unit testing is a way of testing your code by running it with different input values and checking if the output is correct.
+#   Unit testing assumes that tests are inseparable parts of the code and preparing the test data is an inseparable part of coding
+#   This means that when you write a function or a set of cooperating functions, you're also obliged to create a set of data for which your code's behavior is predictable and known.
+#   Equip your code with an interface that can be used by an automated testing environment. 
+#    --In this approach, any amendment made to the code (even the least significant) should be followed by the execution of all the unit tests accompanied by your source.
