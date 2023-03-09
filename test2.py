@@ -1,8 +1,11 @@
-def fun(a):
-    if a > 30:
-        return 3
-    else:
-        return a + fun(a + 3)
- 
- 
-print(fun(25))
+try:
+    value = input("Enter a value: ")
+    print(value/value)
+except ValueError:
+    print("Bad input...")
+except ZeroDivisionError:
+    print("Very bad input...")
+except TypeError:
+    print("Very very bad input...")
+except:
+    print("Booo!")
