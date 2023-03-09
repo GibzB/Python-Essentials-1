@@ -2351,3 +2351,15 @@ except ZeroDivisionError:
 # if one of the branches is executed, all the other branches remain idle.
 
 # The default exception
+
+# added a third except branch, but this time it has no exception name specified – we can say it's anonymous
+# it will be executed only if the first two branches are not executed
+try:
+    value = int(input('Enter a natural number: '))
+    print('The reciprocal of', value, 'is', 1/value)        
+except ValueError:
+    print('I do not know what to do.')    
+except ZeroDivisionError:
+    print('Division by zero is not allowed in our Universe.')    
+except:
+    print('Something strange has happened here... Sorry!')
