@@ -2363,3 +2363,19 @@ except ZeroDivisionError:
     print('Division by zero is not allowed in our Universe.')    
 except:
     print('Something strange has happened here... Sorry!')
+
+# Other Useful Exceptions
+
+# 1. ZeroDivisionError
+#  This appears when you try to force Python to perform any operation which provokes division in which the divider is zero
+
+# 2. TypeError
+#  This appears when you try to force Python to perform any operation which provokes division in which the divider is zero
+
+# 3. IndexError
+#  This appears when you try to force Python to perform any operation which provokes division in which the divider is zero
+
+# 4. KeyError
+#  This appears when you try to force Python to perform any operation which provokes division in which the divider is zero
+short_list = [1]
+one_value = short_list[0.5]
